@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🗳️ Real-Time Poll</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.3.1/firebase-firestore-compat.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🗳️ Real-Time Poll</h1>
+    <p class="question">Do you enjoy learning <span class="highlight">Google Cloud Platform</span>?</p>
+
+    <div class="buttons">
+      <button onclick="vote('yes')" class="btn yes">👍 Yes</button>
+      <button onclick="vote('no')" class="btn no">👎 No</button>
+    </div>
+
+    <div class="results">
+      <h3>📊 Live Results</h3>
+      <p class="result-line">👍 Yes: <span id="yes-count">0</span></p>
+      <p class="result-line">👎 No: <span id="no-count">0</span></p>
+    </div>
+  </div>
+
+  <footer>🚀 Made with ❤️ using Firebase & Google Cloud Platform</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
